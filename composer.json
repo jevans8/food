@@ -1,0 +1,17 @@
+{
+
+  "name": "jevans/328/food",
+
+  "authors": [
+    {
+      "name": "Julia Evans",
+      "email": "jevans8@mail.greenriver.edu"
+    }
+  ],
+
+  "require":
+  {
+    "bcosca/fatfree-core": "dev-master"
+  }
+
+}
