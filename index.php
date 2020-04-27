@@ -15,13 +15,24 @@ $f3 = Base::instance();
 
 //Default route
 $f3->route('GET /', function(){
-    //echo '<h1>Food page</h1>';
 
     //instantiate new template object
     $view = new Template();
 
     //display home page via render method
     echo $view->render('views/home.html');
+});
+
+//Breakfast route
+$f3->route('GET /breakfast', function(){
+
+    //echo "<h1>Welcome to my breakfast page</h1>";
+
+    //instantiate new template object
+    $view = new Template();
+
+    //display home page via render method
+    echo $view->render('views/bfast.html');
 });
 
 //Run F3
