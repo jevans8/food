@@ -45,5 +45,17 @@ $f3->route('GET /breakfast/greenEggs', function(){
     echo $view->render('views/greenEggsAndHam.html');
 });
 
+//Lunch route
+$f3->route('GET /lunch', function(){
+
+    //echo "<h1>Welcome to my breakfast page</h1>";
+
+    //instantiate new template object
+    $view = new Template();
+
+    //display home page via render method
+    echo $view->render('views/lunch.html');
+});
+
 //Run F3
 $f3->run();
