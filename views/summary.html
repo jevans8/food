@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <include href="includes/header.htm"></include>
-    <title>Green Eggs and Ham</title>
+    <title>Order Summary</title>
 </head>
 <body>
 
-<h1>Green Eggs and Ham</h1>
-<img src="../images/greenEggs.jpg" alt="green eggs and ham">
+<h1>Thank you for ordering {{ $_SESSION['food'] }} for {{ @SESSION.meal }}</h1>
 
 </body>
 </html>
