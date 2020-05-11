@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <include href="includes/header.htm"></include>
+    <title>Order Form</title>
+</head>
+<body>
+<h1>Condiments</h1>
+
+<form action="#" method="post" class="form-horizontal">
+
+    <!-- get condiments -->
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Select a condiment</label>
+
+        <div class="col-sm-4">
+
+            <repeat group="{{ @condiments }}" value="{{ @condiment }}">
+                <input type="checkbox" name="condiment[]" id="{{ @condiment }}" value="{{ @condiment }}">
+                {{ ucfirst(@condiment) }}<br>
+            </repeat>
+
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Place Order</button>
+
+</form>
+</body>
+</html>
